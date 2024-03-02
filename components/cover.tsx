@@ -5,6 +5,7 @@ import { ImageIcon, X } from "lucide-react";
 import { useMutation } from "convex/react";
 import { useParams } from "next/navigation";
 
+import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useCoverImage } from "@/hooks/use-cover-image";
@@ -23,16 +24,16 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
   const coverImage = useCoverImage();
   const removeCoverImage = useMutation(api.documents.removeCoverImage);
 
- const onRemove = async () => {
-   if (url) {
-     await edgestore.publicFiles.delete({
-       url: url,
-     });
-   }
-   removeCoverImage({
-     id: params.documentId as Id<"documents">,
-   });
- };
+  const onRemove = async () => {
+    if (url) {
+      await edgestore.publicFiles.delete({
+        url: url,
+      });
+    }
+    removeCoverImage({
+      id: params.documentId as Id<"documents">,
+    });
+  };
 
   return (
     <div
@@ -67,4 +68,8 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
       )}
     </div>
   );
+};
+
+Cover.Skeleton = function CoverSkeleton() {
+  return <Skeleton className="w-full h-[12vh]" />;
 };
