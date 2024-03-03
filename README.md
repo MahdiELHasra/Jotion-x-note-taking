@@ -1,24 +1,66 @@
+# Fullstack <a href='https://jotion-x.vercel.app/' target='_blank'><u>Jotion</u></a> (Notion Clone) : Next.js 14, React, Convex, TailwindCss, Shadcn, ClerkAuth
+
+![Jotion Overview](https://gist.github.com/assets/114767917/6d238d2a-8798-41ff-999a-9ddd6daa0e1a)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Key Features:
 
-First, run the development server:
+- Real-time database synchronization 🔗
+- Notion-style text editor 📝
+- Dual theme support: Light and Dark mode 🌓
+- Infinite hierarchical document structure 🌲
+- Trash can functionality with soft delete option 🗑️
+- Secure authentication system 🔐
+- Capability for file uploads
+- File deletion functionality
+- File replacement feature
+- Dynamic icons associated with each document (updates in real-time) 🌠
+- Expandable sidebar with directional controls ➡️🔀⬅️
+- Complete mobile responsiveness for seamless access on any device 📱
+- Ability to publish your notes to the web 🌐
+- Fully collapsible sidebar for enhanced interface flexibility ↕️
+- Integrated landing page feature for user convenience 🛬
+- Cover image customization for each document 🖼️
+- File recovery option for retrieving deleted files 🔄📄
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Cloning the repository
+
+```shell
+git clone https://github.com/MahdiELHasra/Jotion-x-note-taking.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
+
+```js
+# Deployment used by `npx convex dev`
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
+
+### Setup Convex
+
+```shell
+npx convex dev
+```
+
+### Start the app
+
+```shell
+npm run dev
+```
 
 ## Learn More
 
