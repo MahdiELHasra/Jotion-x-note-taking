@@ -1,6 +1,6 @@
 # Fullstack <a href='https://jotion-x.vercel.app/' target='_blank'><u>Jotion</u></a> (Notion Clone) : Next.js 14, React, Convex, TailwindCss, Shadcn, ClerkAuth
 
-![Jotion Overview](https://gist.github.com/assets/114767917/6d238d2a-8798-41ff-999a-9ddd6daa0e1a)
+![Overview](https://github.com/MahdiELHasra/Jotion-x-note-taking/assets/114767917/8f39c5aa-ba1b-4cd4-87bc-7aeaebbd527f)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
